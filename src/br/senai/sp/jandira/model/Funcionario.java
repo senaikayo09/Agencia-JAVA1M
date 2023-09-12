@@ -9,9 +9,9 @@ public class Funcionario {
     /** Instancia Teclado */
     Scanner teclado = new Scanner(System.in);
 
-    public void CadastrarFuncionario(){
+    public void cadastrarFuncionario(){
 
-        System.out.println("----- Cadastro Cliente ------");
+        System.out.println("----- Cadastro Funcionario ------");
         System.out.print("Informe seu nome: ");
         nome = teclado.nextLine();
         System.out.print("Informe o seu cpf: ");
@@ -28,8 +28,6 @@ public class Funcionario {
         System.out.print("Informe seu Telefone: ");
         telefone = teclado.nextLong();
         System.out.println("------------------------------");
-
-        teclado.close();
 
         System.out.println("Cadastro Finalizado !!");
 

@@ -11,7 +11,7 @@ public class Veiculo {
     /** Instancia Scanner */
     Scanner teclado = new Scanner(System.in);
 
-    public void CadastrarVeiculo(){
+    public void cadastrarVeiculo(){
 
         System.out.println("----- Cadastro Veiculo ------");
         System.out.print("Informe qual a marca: ");
@@ -28,8 +28,6 @@ public class Veiculo {
         System.out.print("Informe o valor: ");
         valor = teclado.nextDouble();
         System.out.println("------------------------------");
-
-        teclado.close();
 
         System.out.println("Cadastro Finalizado !!");
 
