@@ -2,7 +2,7 @@ package br.senai.sp.jandira.model;
 
 public class Venda {
 
-    public void realizarVenda(Cliente objCliente, Veiculo objVeiculo){
+    public boolean realizarVenda(Cliente objCliente, Veiculo objVeiculo){
 
         System.out.println("------ Validando Venda -------");
 
@@ -14,8 +14,11 @@ public class Venda {
             System.out.println("No precinho de " + objVeiculo.valor);
             System.out.println("--------------------------------------------------");
 
+            return true;
+
         } else {
             System.out.println("Escolha um carro mais acessivel");
+            return false;
         }
 
 

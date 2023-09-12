@@ -44,7 +44,13 @@ public class Menu {
                     break;
 
                 case 4:
-                    objVenda.realizarVenda(objCliente, objVeiculo);
+                    boolean venda = objVenda.realizarVenda(objCliente, objVeiculo);
+
+                    if (venda){
+                        objCliente.dinheiroDisponivel -= objVeiculo.valor;
+                        System.out.println("Seu saldo é: " + objCliente.dinheiroDisponivel);
+                    }
+
                     break;
 
                 case 5:
