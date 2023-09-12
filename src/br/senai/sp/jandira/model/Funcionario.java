@@ -6,6 +6,8 @@ public class Funcionario {
     String nome, email, endereco, dataNascimento;
     long telefone, cpf, rg;
 
+    double bonus;
+
     /** Instancia Teclado */
     Scanner teclado = new Scanner(System.in);
 
@@ -33,6 +35,11 @@ public class Funcionario {
 
     }
 
+    public void bonusFuncionario(Veiculo objVeiculo){
+
+        bonus = objVeiculo.valor * 0.10;
+
+    }
 
 
 }

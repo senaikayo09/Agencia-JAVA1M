@@ -1,5 +1,6 @@
 package br.senai.sp.jandira.model;
 
+import javax.swing.*;
 import java.util.Scanner;
 
 public class Menu {
@@ -50,6 +51,12 @@ public class Menu {
                         objCliente.dinheiroDisponivel -= objVeiculo.valor;
                         System.out.println("Seu saldo é: " + objCliente.dinheiroDisponivel);
                     }
+
+                    objFuncionario.bonusFuncionario(objVeiculo);
+
+                    System.out.println("O Funcionario recebeu: " + objFuncionario.bonus);
+
+                    JOptionPane.showMessageDialog(null, "Valeu Pelo Dinheiro!", "Finalização Venda", JOptionPane.WARNING_MESSAGE);
 
                     break;
 
